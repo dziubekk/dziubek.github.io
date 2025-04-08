@@ -1,7 +1,6 @@
 :root {
-    --bg: #0f0f0f;
     --text: #ffffff;
-    --accent: #00ffcc;
+    --accent: #ff9900;
     --card-bg: #1c1c1c;
   }
   * {
@@ -12,7 +11,7 @@
   
   body {
     font-family: 'Segoe UI', sans-serif;
-    background: var(--bg);
+    background: #b61924;
     color: var(--text);
     overflow-x: hidden;
     transition: background 0.3s ease, color 0.3s ease;
@@ -101,6 +100,11 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
   }
   
+  .skills li:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 20px var(--accent);
+  }
+
   /* Contact form */
   form {
     display: flex;
