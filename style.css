@@ -1,0 +1,176 @@
+:root {
+    --bg: #0f0f0f;
+    --text: #ffffff;
+    --accent: #00ffcc;
+    --card-bg: #1c1c1c;
+  }
+  
+  body.light-mode {
+    --bg: #f2f2f2;
+    --text: #111111;
+    --accent: #0077ff;
+    --card-bg: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+  }
+  
+  /* Particle background */
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+  }
+  .theme-toggle:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  
+  /* Section spacing */
+  section {
+    padding: 6rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--accent);
+  }
+  
+  .highlight {
+    color: var(--accent);
+  }
+  
+  /* Project cards */
+  .project-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    color: var(--text);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 20px var(--accent);
+  }
+  
+  /* Skills list */
+  .skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .skills li {
+    background: var(--card-bg);
+    padding: 0.7rem 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+  
+  /* Contact form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: var(--text);
+    resize: none;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+  }
+  
+  button[type="submit"] {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  button[type="submit"]:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.2rem;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+  
