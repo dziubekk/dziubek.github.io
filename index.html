@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moje Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="libs/aos.css" />
+</head>
+<body>
+
+  <!-- Przycisk zmiany motywu -->
+  <button class="theme-toggle">🌓</button>
+
+  <!-- Tło cząsteczek -->
+  <div id="particles-js"></div>
+
+  <section class="hero">
+    <h1 class="hero-title">Cześć, jestem <span class="highlight">Dziubeek</span></h1>
+    <p class="subtitle">Java Developer ✨</p>
+  </section>
+
+  <section class="about" data-aos="fade-up">
+    <h2>O mnie</h2>
+    <p>Mocny ziomek</p>
+  </section>
+
+  <section class="projects" data-aos="fade-up">
+    <h2>Projekty</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>antCode</h3>
+        <p>...</p>
+      </div>
+      <div class="card">
+        <h3>earthsmp.eu</h3>
+        <p>mocny projekt</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" data-aos="fade-up">
+    <h2>Umiejętności</h2>
+    <ul>
+      <li>JAVA</li>
+      <li>HTML/CSS/JS</li>
+      <li>SKRIPT</li>
+      <li>C#</li>
+      <li>UNITY</li>
+      <li>Git</li>
+    </ul>
+  </section>
+
+  <section class="contact" data-aos="fade-up">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Nick" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Wiadomość" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+
+  <script src="libs/particles.min.js"></script>
+  <script src="libs/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
